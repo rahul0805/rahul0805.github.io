@@ -27,7 +27,6 @@ table {
   td,
   th {
     font-size: 1rem;
-    padding: 1px 1rem 1px 0;
   }
 
   th {
@@ -196,6 +195,33 @@ ul.task-list input[type="checkbox"] {
       margin: 0;
     }
   }
+
+  .social {
+    text-align: center;
+  
+    .contact-icons {
+      font-size: 2.5rem;
+  
+      a {
+        i::before {
+          color: var(--global-text-color);
+          transition-property: all 0.2s ease-in-out;
+        }
+  
+        &:hover {
+          i::before {
+            color: var(--global-theme-color);
+          }
+        }
+      }
+    }
+  
+    .contact-note {
+      font-size: 0.8rem;
+    }
+  }
+  
+
 }
 
 .profile.float-right {
@@ -644,6 +670,112 @@ footer.sticky-bottom {
     text-align: right;
   }
 }
+
+// Projects
+
+.experience {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      .card-title {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure the card takes full height if required */
+    
+    img {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+      margin: 0; /* Remove existing margins */
+    }
+
+    .card-title {
+      color: var(--global-text-color);
+    }
+  }
+
+  .card-item {
+    width: auto;
+    margin-bottom: 10px;
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .grid-item {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  h2.category {
+    color: var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+}
+
+// .experience {
+//   a {
+//     text-decoration: none;
+
+//     &:hover {
+//       .card-title {
+//         color: var(--global-theme-color);
+//       }
+//     }
+//   }
+
+//   .card {
+//     img {
+//       width:50%;
+//       height:50%;
+//       margin-left: 30%;
+//       // margin-right: auto;
+//       margin-top: 1%;
+//     }
+//     .card-title {
+//       color: var(--global-text-color);
+//     }
+//   }
+
+//   .card-item {
+//     width: auto;
+//     margin-bottom: 10px;
+
+//     .row {
+//       display: flex;
+//       align-items: center;
+//     }
+//   }
+
+//   .grid-item {
+//     width: 250px;
+//     margin-bottom: 10px;
+//   }
+
+//   h2.category {
+//     color: var(--global-divider-color);
+//     border-bottom: 1px solid var(--global-divider-color);
+//     padding-top: 0.5rem;
+//     margin-top: 2rem;
+//     margin-bottom: 1rem;
+//     text-align: right;
+//   }
+// }
+
 
 // Publications
 
