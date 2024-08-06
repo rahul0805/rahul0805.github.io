@@ -1,24 +1,23 @@
 <div class="card-item col">
   {% if experience.redirect %}
-    <a href="{{ experience.redirect }}">
+  <a href="{{ experience.redirect }}">
   {% else %}
-    <a href="{{ experience.url | relative_url }}">
+  <a href="{{ experience.url | relative_url }}">
   {% endif %}
     <div class="card hoverable">
       <div class="row g-0">
         {% if experience.img %}
-          <div class="card-img col-md-6">
-            <img src="{{ experience.img | relative_url }}">
-          </div>
-          <div class="col-md-6">
+        <div class="card-img col-md-6">
+          <img src="{{ experience.img | relative_url }}">
+        </div>
+        <div class="col-md-6">
         {% else %}
-          <div class="col-md-12">
+        <div class="col-md-12">
         {% endif %}
-            <div class="card-body">
-              <h3 class="card-title">{{ experience.title }}</h3>
-              <h4 class="card-title text-muted">{{ experience.timeline }}</h4>
-              <p class="card-text">{{ experience.description }}</p>
-            </div>
+          <div class="card-body">
+            <h3 class="card-title">{{ experience.title }}</h3>
+            <h4 class="card-title text-muted">{{ experience.timeline }}</h4>
+            <p class="card-text">{{ experience.description }}</p>
           </div>
         </div>
       </div>
